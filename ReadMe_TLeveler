@@ -1,0 +1,18 @@
+firstly, data gathering is quite important here we want to get economics data from
+a trading website; the site I have chosen for this is trading economics. TE.com is free
+and is full with trading relative data.
+for this preliminary task I will be using requests, bs4 and csv-files.
+
+take the data gathered in the csv file and do some calculations on them.
+first we need a easy way to do data retrieval from the csv file.
+we will use pandas for this purpose. with pandas dataframe sturcture interacting with the fields
+ in the CSV file is alot simplers. in terms of selection, and modification of the table/dataframe.
+
+we will be getting data about interest rate and GDP QOQ (quarterly growth rate of the country)
+
+after getting the data we want to analyse we want to start thinking about the calculation.
+
+For this I will be using a point and kill approach.
+rather than doing computation for all the pair I will do computation for the most popular pairs,
+and then allow the user to point out which other pair they wan to be computed.
+Haskell curry would be ideal if we were to take pairs(tuple) as inputs
